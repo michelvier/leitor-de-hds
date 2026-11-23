@@ -3,7 +3,7 @@ Uma vez por computador, uns 10 minutos.
 
 O QUE VOCÊ PRECISA
 - O arquivo "Leitor de HDs v0.19 (Mac).zip", baixado de
-  https://github.com/michelvier/leitor-de-hds/releases/latest
+  https://github.com/michelvier/leitor-de-hds (pasta versoes)
 - O robô da The Youth e a chave dele (chave-leitor-de-hds.json). Se ainda não
   existem, crie antes, com a conta Google da produtora: passo a passo em
   CRIAR_O_ROBO_v0.19.txt. A chave funciona como senha: não deixe em pasta

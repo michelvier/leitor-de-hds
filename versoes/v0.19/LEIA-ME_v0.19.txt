@@ -129,7 +129,7 @@ linhas para a aba LEITURAS".
 
 VERSÃO NOVA
 As versões são publicadas no GitHub:
-  https://github.com/michelvier/leitor-de-hds/releases/latest
+  https://github.com/michelvier/leitor-de-hds
 Quando sai uma versão nova, aparece uma faixa amarela no alto da janela:
 "Saiu a vX.Y do leitor. Baixar a versão nova". O leitor só avisa: ele não se
 troca sozinho. Feche o leitor, baixe a versão nova pelo link e abra. As
