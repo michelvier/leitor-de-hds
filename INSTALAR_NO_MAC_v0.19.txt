@@ -1,0 +1,87 @@
+INSTALAR O LEITOR DE HDs NO MAC · v0.19 · THE YOUTH
+Uma vez por computador, uns 10 minutos.
+
+O QUE VOCÊ PRECISA
+- O arquivo "Leitor de HDs v0.19 (Mac).zip", baixado de
+  https://github.com/michelvier/leitor-de-hds/releases/latest
+- O robô da The Youth e a chave dele (chave-leitor-de-hds.json). Se ainda não
+  existem, crie antes, com a conta Google da produtora: passo a passo em
+  CRIAR_O_ROBO_v0.19.txt. A chave funciona como senha: não deixe em pasta
+  compartilhada, e-mail nem chat.
+- O link da planilha que vai receber as leituras.
+- Recomendado: Google Chrome instalado. Com ele o leitor abre numa janela
+  pequena só dele; sem ele, abre numa aba do Safari (funciona igual).
+
+
+1. INSTALAR O PROGRAMA
+1. Baixe o "Leitor de HDs v0.19 (Mac).zip" e dê dois cliques nele. Sai o
+   aplicativo "Leitor de HDs v0.19", com o ícone da The Youth.
+2. Arraste o aplicativo para a pasta Aplicativos.
+3. Primeira vez: o Mac recusa abrir, porque o programa não é da App Store.
+   - Clique com o botão direito no aplicativo > Abrir > Abrir.
+   - Se não aparecer a opção (macOS 15): tente abrir uma vez, depois vá em
+     Ajustes do Sistema > Privacidade e Segurança, desça até o aviso do
+     "Leitor de HDs" e clique em "Abrir Mesmo Assim". Confirme com a senha.
+   Isso só acontece na primeira vez.
+4. O leitor abre uma janela pequena com a marca da The Youth no alto.
+   Feche a janela por enquanto.
+
+
+2. COLOCAR A CHAVE DO ROBÔ
+1. No Finder, aperte Cmd + Shift + H (abre a sua pasta de usuário, a da
+   casinha).
+2. Ali já deve existir a pasta BKP-THE-YOUTH (o leitor cria quando abre pela
+   primeira vez). Se não existir, crie com esse nome, tudo em maiúsculas.
+3. Copie o arquivo chave-leitor-de-hds.json para dentro de BKP-THE-YOUTH.
+   O nome tem que ser exatamente esse.
+4. Abra o leitor de novo. No alto da janela aparece "Compartilhe a planilha
+   como Editor com o robô:" e o e-mail dele, com o botão "copiar".
+
+
+3. LIGAR À PLANILHA
+1. Na planilha: Compartilhar > cole o e-mail do robô (botão "copiar" na
+   janela do leitor; termina em .iam.gserviceaccount.com) > Editor >
+   desmarque "Notificar pessoas" > Compartilhar.
+2. Copie o link da planilha (o endereço do navegador, com a planilha aberta).
+3. Abra o leitor. No alto da janela, a linha da planilha deve mostrar que achou
+   a chave (se disser que não achou, confira o passo 2).
+4. Cole o link no campo e clique em "Ligar". Aparece o nome da planilha com uma
+   bolinha verde.
+   Se der erro:
+   - "não está compartilhada com o robô": refaça o passo 1 (como Editor).
+   - "não tem a aba LEITURAS": a planilha ainda não foi preparada para o
+     leitor (falta a aba LEITURAS, e a aba JOBS para os jobs).
+   - "não achei a planilha": confira o link.
+
+
+4. PRIMEIRA LEITURA (uma torre)
+1. Ligue a torre e espere ela aparecer no Finder.
+2. Na janela do leitor, clique em "Atualizar". A torre aparece num cartão.
+3. Se o Mac perguntar se o Leitor de HDs pode acessar volumes removíveis,
+   clique em OK.
+4. Marque a torre e escreva o código dela, como está na coluna Nº da COLD
+   TORRES: T77 para a torre 77. Aparece "TORRE · COLD" ao lado.
+5. Clique em "Ler os marcados". Leva de segundos a poucos minutos: o leitor
+   só olha nomes, tamanhos e datas. No fim, a planilha já recebeu a leitura
+   (aba LEITURAS) e o ESPAÇO LIVRE da torre, e os jobs dela aparecem embaixo.
+   Opcional: "testar a leitura de cada arquivo", no resultado da torre, lê o
+   disco inteiro para achar arquivo com defeito. Numa torre cheia leva horas
+   (Mac ligado, sem dormir). "Parar o teste" não desfaz a leitura.
+6. Não desligue a torre enquanto aparecer "Lendo".
+
+O LEITOR SÓ LÊ. Ele não apaga, não move e não grava nada na torre.
+Se o Mac oferecer para "inicializar" ou formatar um disco, isso vem do macOS,
+não do leitor. NÃO ACEITE.
+
+
+5. JOBS DA TORRE
+Na parte "Jobs das torres", escreva o código (T77) e clique em "Ver".
+Dá para acrescentar e remover jobs. Remover não apaga: a linha fica guardada
+na aba JOBS com a data de saída. Depois de ler uma torre, o leitor mostra as
+pastas dela que não parecem estar na lista (é só sugestão).
+
+
+VERSÃO NOVA
+Quando sair uma versão nova, aparece uma faixa amarela no alto da janela com o
+link para baixar (do GitHub). Feche o leitor, baixe, arraste para Aplicativos
+(substituindo o antigo) e abra. A chave e a ligação com a planilha continuam.
