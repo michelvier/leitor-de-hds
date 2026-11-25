@@ -1,0 +1,145 @@
+INSTALAR O LEITOR DE HDs NO MAC · v0.25 · THE YOUTH
+Uma vez por computador, uns 10 minutos.
+
+O QUE VOCÊ PRECISA
+- O arquivo "Leitor de HDs v0.25 (Mac).zip", baixado de
+  https://github.com/michelvier/leitor-de-hds (pasta versoes)
+- O robô da The Youth e a chave dele (chave-leitor-de-hds.json). Se ainda não
+  existem, crie antes, com a conta Google da produtora: passo a passo em
+  CRIAR_O_ROBO_v0.25.txt. A chave funciona como senha: não deixe em pasta
+  compartilhada, e-mail nem chat.
+- O link da planilha que vai receber as leituras.
+- Recomendado: Google Chrome instalado. Com ele o leitor abre numa janela
+  pequena só dele; sem ele, abre numa aba do Safari (funciona igual).
+
+
+Funciona em macOS 10.13 (High Sierra) ou mais novo. Mac com chip Apple (M1 em
+diante): pode usar o "(Mac com chip Apple).zip". Para ver a versão do Mac:
+menu da maçã > Sobre Este Mac.
+
+
+1. INSTALAR O PROGRAMA
+Jeito mais rápido (sem o aviso de segurança do Mac): abra o Terminal
+(Cmd + Espaço, escreva Terminal, Enter), cole a linha abaixo inteira e dê Enter.
+Ela baixa, coloca em Aplicativos e abre:
+
+curl -L -o /tmp/leitor.zip "https://github.com/michelvier/leitor-de-hds/raw/main/versoes/v0.25/Leitor%20de%20HDs%20v0.25%20(Mac).zip" && ditto -xk /tmp/leitor.zip /Applications && open "/Applications/Leitor de HDs v0.25.app"
+
+Ou, pelo navegador:
+1. Baixe o "Leitor de HDs v0.25 (Mac).zip" e dê dois cliques nele. Sai o
+   aplicativo "Leitor de HDs v0.25", com o ícone da The Youth.
+2. Arraste o aplicativo para a pasta Aplicativos.
+3. Primeira vez: o Mac recusa abrir, porque o programa não é da App Store.
+   - Clique com o botão direito no aplicativo > Abrir > Abrir.
+   - Se não aparecer a opção (macOS 15): tente abrir uma vez, depois vá em
+     Ajustes do Sistema > Privacidade e Segurança, desça até o aviso do
+     "Leitor de HDs" e clique em "Abrir Mesmo Assim". Confirme com a senha.
+   Isso só acontece na primeira vez.
+4. O leitor abre uma janela pequena com a marca da The Youth no alto.
+   Feche a janela por enquanto.
+
+
+2. COLOCAR A CHAVE DO ROBÔ
+1. No Finder, aperte Cmd + Shift + H (abre a sua pasta de usuário, a da
+   casinha).
+2. Ali já deve existir a pasta BKP-THE-YOUTH (o leitor cria quando abre pela
+   primeira vez). Se não existir, crie com esse nome, tudo em maiúsculas.
+3. Copie o arquivo chave-leitor-de-hds.json para dentro de BKP-THE-YOUTH.
+   O nome tem que ser exatamente esse.
+4. Abra o leitor de novo. No alto da janela aparece "Compartilhe a planilha
+   como Editor com o robô:" e o e-mail dele, com o botão "copiar".
+
+
+3. LIGAR À PLANILHA
+1. Na planilha: Compartilhar > cole o e-mail do robô (botão "copiar" na
+   janela do leitor; termina em .iam.gserviceaccount.com) > Editor >
+   desmarque "Notificar pessoas" > Compartilhar.
+2. Copie o link da planilha (o endereço do navegador, com a planilha aberta).
+3. Abra o leitor. No alto da janela, a linha da planilha deve mostrar que achou
+   a chave (se disser que não achou, confira o passo 2).
+4. Cole o link no campo e clique em "Ligar". Aparece o nome da planilha com uma
+   bolinha verde.
+   Se der erro:
+   - "não está compartilhada com o robô": refaça o passo 1 (como Editor).
+   - "não tem a aba LEITURAS": a planilha ainda não foi preparada para o
+     leitor (falta a aba LEITURAS, e a aba JOBS para os jobs).
+   - "não achei a planilha": confira o link.
+
+
+4. PRIMEIRA LEITURA (uma torre)
+1. Ligue a torre e espere ela aparecer no Finder.
+2. Na janela do leitor, clique em "Atualizar". A torre aparece num cartão.
+3. Se o Mac perguntar se o Leitor de HDs pode acessar volumes removíveis,
+   clique em OK.
+4. Marque a torre e escreva o código dela, como está na coluna Nº da COLD
+   TORRES: T77 para a torre 77. Aparece "TORRE · COLD" ao lado.
+5. Clique em "Ler os marcados". Leva de segundos a poucos minutos: o leitor
+   só olha nomes, tamanhos e datas. No fim, a planilha já recebeu a leitura
+   (aba LEITURAS) e o ESPAÇO LIVRE da torre, e os jobs dela aparecem embaixo.
+   Opcional: "testar a leitura de cada arquivo", no resultado da torre, lê o
+   disco inteiro para achar arquivo com defeito. Numa torre cheia leva horas
+   (Mac ligado, sem dormir). "Parar o teste" não desfaz a leitura.
+6. Não desligue a torre enquanto aparecer "Lendo".
+
+SE ALGO NÃO FUNCIONAR NO DIA
+- Sem robô, sem planilha ou sem internet: leia os discos do mesmo jeito. Cada
+  leitura fica guardada no Mac (pasta BKP-THE-YOUTH/leituras) e a janela mostra
+  quantas estão fora da planilha. Depois, com a planilha ligada, "enviar agora"
+  manda todas.
+- A torre não aparece na lista: marque "Mostrar também os discos de dentro do
+  computador". Os discos das baias internas do Mac (ligação SATA) ficam
+  escondidos; uma torre ligada por dentro, numa baia, também.
+- Faixa no alto "To get future Google Chrome updates...": é um aviso do Google
+  Chrome (este macOS não recebe mais Chrome novo), não do leitor. Feche no X.
+- "operation not permitted" ao ler: Ajustes do Sistema (Preferências do
+  Sistema) > Privacidade e Segurança > Acesso Total ao Disco > adicione o
+  Leitor de HDs e abra de novo.
+- A janela não abriu: espere um minuto; aparece um aviso com um endereço.
+  Copie o endereço no Safari ou no Chrome.
+
+O LEITOR SÓ LÊ. Ele não apaga, não move e não grava nada na torre.
+Se o Mac oferecer para "inicializar" ou formatar um disco, isso vem do macOS,
+não do leitor. NÃO ACEITE.
+
+
+5. JOBS DA TORRE
+Na parte "Jobs das torres", escreva o código (T77) e clique em "Ver".
+Dá para acrescentar e remover jobs. Remover não apaga: a linha fica guardada
+na aba JOBS com a data de saída. Depois de ler uma torre, o leitor mostra as
+pastas dela que não parecem estar na lista (é só sugestão).
+
+
+VERSÃO NOVA
+Quando sair uma versão nova, aparece uma faixa amarela no alto da janela com o
+link para baixar (do GitHub). Feche o leitor, baixe, arraste para Aplicativos
+(substituindo o antigo) e abra. A chave e a ligação com a planilha continuam.
+
+
+NO MAC (v0.25)
+- Com o leitor aberto, o ícone da The Youth aparece no Dock. Clicar nele traz
+  a janela do leitor para a frente (ou abre de novo, se ela foi fechada). Para fechar: botão direito no ícone > Encerrar (Quit), ou
+  feche a janela (o leitor fecha sozinho uns segundos depois).
+- Disco que não responde (com defeito, ou ainda acordando) não trava mais o
+  leitor: depois de 15 segundos ele fica fora da lista. Se um HD pisca e não
+  aparece nem no Finder, é o Mac que não está conseguindo montar o disco:
+  separe e anote. Se o Mac oferecer "Inicializar", NÃO ACEITE.
+- O Mac pergunta se quer usar cada torre no Time Machine: clique em
+  "Don't Use" (Não Usar). Nunca em "Use as Backup Disk".
+
+O QUE O LEITOR ESCREVE NA PLANILHA (v0.25)
+- Aba LEITURAS: uma linha por pasta do primeiro nível da torre.
+- Aba LEITURAS DETALHE (se existir): as pastas do 2º e do 3º nível.
+- Aba CONFERÊNCIA (se existir, junto com a aba JOBS): para cada torre lida, os
+  jobs anotados ao lado das pastas achadas: "confere", "parecido", "job sem
+  pasta" ou "pasta sem job". Quando as pastas da raiz são a estrutura de um
+  projeto só (BRUTAS, EDT, EXP, PROXY, diárias), a torre aparece como "disco
+  inteiro". Pastas de ano (2016, 2020) são olhadas por dentro. Números contam
+  (UBER 01 não é UBER 02). Pastas do sistema (Seagate, Start_Here_Mac.app,
+  FOUND.000, auto-save do Adobe) ficam de fora. A conferência das torres já
+  lidas é refeita sozinha na primeira leitura com a v0.25.
+- Aba COLD TORRES: o ESPAÇO LIVRE de cada torre lida vira uma fórmula que pega o
+  espaço livre da leitura mais recente dessa torre na aba LEITURAS; a coluna TB, quando o disco mede
+  outro tamanho (a correção fica anotada na OBS da leitura); e a ordem das
+  linhas por espaço livre.
+- Datas de arquivo anteriores a 1990 (câmera sem relógio) não entram em MAIS
+  ANTIGO / MAIS NOVO.
