@@ -7,15 +7,15 @@ Este repositório tem só as versões prontas do programa. Nada da planilha, das
 
 ## Baixar
 
-Última versão: **v0.29**
+Última versão: **v0.30**
 
-- Windows 10 ou 11: [Leitor de HDs v0.29 (Windows).exe](versoes/v0.29/Leitor%20de%20HDs%20v0.29%20(Windows).exe)
-- Mac (macOS 10.13 High Sierra ou mais novo): [Leitor de HDs v0.29 (Mac).zip](versoes/v0.29/Leitor%20de%20HDs%20v0.29%20(Mac).zip)
-- Mac com chip Apple (M1 em diante), opcional: [Leitor de HDs v0.29 (Mac com chip Apple).zip](versoes/v0.29/Leitor%20de%20HDs%20v0.29%20(Mac%20com%20chip%20Apple).zip)
+- Windows 10 ou 11: [Leitor de HDs v0.30 (Windows).exe](versoes/v0.30/Leitor%20de%20HDs%20v0.30%20(Windows).exe)
+- Mac (macOS 10.13 High Sierra ou mais novo): [Leitor de HDs v0.30 (Mac).zip](versoes/v0.30/Leitor%20de%20HDs%20v0.30%20(Mac).zip)
+- Mac com chip Apple (M1 em diante), opcional: [Leitor de HDs v0.30 (Mac com chip Apple).zip](versoes/v0.30/Leitor%20de%20HDs%20v0.30%20(Mac%20com%20chip%20Apple).zip)
 
 Clique no arquivo e depois em "Download" (ou no ícone de baixar, à direita).
 
-Textos da versão, na mesma pasta ([versoes/v0.29](versoes/v0.29)):
+Textos da versão, na mesma pasta ([versoes/v0.30](versoes/v0.30)):
 
 - `LEIA-ME`: como usar
 - `INSTALAR_NO_MAC`: instalação passo a passo
