@@ -1,7 +1,7 @@
 {
-  "versao": "1.6",
-  "windows": "https://github.com/michelvier/leitor-de-hds/raw/main/versoes/v1.6/Leitor%20de%20HDs%20v1.6%20(Windows).exe",
-  "mac": "https://github.com/michelvier/leitor-de-hds/raw/main/versoes/v1.6/Leitor%20de%20HDs%20v1.6%20(Mac).zip",
-  "mac_apple": "https://github.com/michelvier/leitor-de-hds/raw/main/versoes/v1.6/Leitor%20de%20HDs%20v1.6%20(Mac%20com%20chip%20Apple).zip",
+  "versao": "1.7",
+  "windows": "https://github.com/michelvier/leitor-de-hds/raw/main/versoes/v1.7/Leitor%20de%20HDs%20v1.7%20(Windows).exe",
+  "mac": "https://github.com/michelvier/leitor-de-hds/raw/main/versoes/v1.7/Leitor%20de%20HDs%20v1.7%20(Mac).zip",
+  "mac_apple": "https://github.com/michelvier/leitor-de-hds/raw/main/versoes/v1.7/Leitor%20de%20HDs%20v1.7%20(Mac%20com%20chip%20Apple).zip",
   "pagina": "https://github.com/michelvier/leitor-de-hds"
 }
