@@ -1,0 +1,187 @@
+LEITOR DE HDs · v1.4 · THE YOUTH
+Programa para Windows e para Mac. Não precisa instalar nada.
+Os dois vêm do mesmo jeito: um arquivo com o ícone da The Youth, que abre só uma
+janela pequena, sem nenhuma janela de texto (prompt de comando) junto.
+  Windows: Leitor de HDs v1.4 (Windows).exe
+  Mac:     Leitor de HDs v1.4 (Mac).zip  ->  Leitor de HDs v1.4 (aplicativo)
+
+
+O QUE ELE FAZ
+Mostra as torres e os SSDs ligados ao computador. Você marca os que quer ler e
+escreve o código de cada um (T77, W6). De cada disco ele:
+- anota a capacidade e o espaço livre;
+- anota as primeiras pastas: as pastas que aparecem quando você abre o disco,
+  ou seja, as do primeiro nível (em geral, uma por job). Tudo o que está dentro
+  de cada uma entra na conta dela: tamanho, quantidade de arquivos e datas do
+  arquivo mais antigo e do mais novo. Arquivos fora de qualquer pasta aparecem
+  juntos, como "(arquivos soltos na raiz)";
+- anota o modelo e o número de série do aparelho (torre ou SSD). Com isso ele
+  reconhece o disco na próxima vez, mesmo que tenha sido formatado, e já traz
+  o código preenchido;
+- se você pedir, testa cada arquivo (veja "Teste de leitura", abaixo).
+Para isso ele só olha os nomes, tamanhos e datas (como o Explorador de
+Arquivos ou o Finder fazem). Não abre os arquivos. Por isso é rápido.
+Com o computador ligado à planilha, tudo vai sozinho para ela.
+
+ELE SÓ LÊ. Não apaga, não move, não renomeia e não grava nada nos discos.
+
+
+COMO ABRIR
+
+Windows 10 ou 11
+  Dois cliques em "Leitor de HDs v1.4 (Windows).exe".
+  Se aparecer "O Windows protegeu o computador": clique em "Mais informações" e
+  depois em "Executar assim mesmo". O aviso aparece porque o programa é novo e não
+  tem assinatura.
+
+Mac (macOS 10.13 High Sierra ou mais novo). Mac com chip Apple (M1 em diante) pode usar
+o "(Mac com chip Apple).zip", que dispensa o Rosetta.
+  Abra "Leitor de HDs v1.4 (Mac).zip" e dê dois cliques no aplicativo que sai dele
+  ("Leitor de HDs v1.4"). Pode arrastar ele para a pasta Aplicativos.
+  Na primeira vez o Mac recusa, por não conhecer o programa:
+  - clique com o botão direito no programa > Abrir > Abrir;
+  - no macOS 15: Ajustes do Sistema > Privacidade e Segurança > "Abrir Mesmo Assim".
+  Se o Mac perguntar se o Leitor de HDs pode acessar volumes removíveis, clique em OK.
+
+Abre uma janela pequena, só do leitor. Para fechar o leitor, feche a janela. Se
+uma leitura estiver em andamento, ele termina antes de fechar.
+Abrir o programa de novo com ele já aberto só traz a janela de volta.
+
+
+COMO LER
+1. Ligue as torres e os SSDs e espere aparecerem no computador. Na janela,
+   clique em "Atualizar".
+2. Marque os discos que quer ler. Nada vem marcado sozinho, e o disco do próprio
+   computador nunca aparece.
+3. Em cada disco marcado, escreva o código dele, como está na planilha:
+   T77 para a torre 77, W6 para o SSD W 06. Pelo código o leitor já sabe se é
+   torre (Cold) ou SSD (Hot). Disco que já foi lido vem com o código preenchido.
+4. Clique em "Ler os marcados". Leva de segundos a poucos minutos por disco
+   (num disco antigo e lento, um pouco mais). No fim, a planilha já está
+   atualizada.
+
+TESTE DE LEITURA (opcional, disco por disco)
+No resultado de cada disco há "testar a leitura de cada arquivo". Ele abre e
+lê cada arquivo do começo ao fim e avisa quais não conseguiu ler. Demora o
+tempo de copiar o disco inteiro: num SSD, minutos; numa torre cheia, muitas
+horas. A janela mostra quanto falta. O resultado vai para a coluna OBS da
+leitura, na aba LEITURAS. Vale fazer antes de confiar num disco antigo ou antes
+de apagar a única outra cópia de um job.
+"Parar o teste" interrompe só o teste: a leitura do disco continua valendo, e
+a OBS diz até onde o teste chegou. Dá para pedir de novo depois.
+O teste acha arquivo que não dá para ler. Ele não garante que o disco está bom.
+
+
+O QUE VAI PARA A PLANILHA
+- Aba LEITURAS: uma linha para o disco inteiro e uma para cada primeira pasta.
+- Aba COLD TORRES: o ESPAÇO LIVRE da torre lida (a linha do mesmo número).
+- Aba SSDS WORKING STATUS: SSD lido e vazio passa a LIVRE na coluna STATUS, a
+  não ser que esteja EM USO ou DEFEITO (aí o leitor só avisa).
+- Ordem: depois de cada leitura, a COLD TORRES fica com mais ESPAÇO LIVRE
+  primeiro, e a SSDS com os LIVRE primeiro (o maior primeiro). A linha inteira
+  anda junto; nada é apagado nem reescrito. Se a tabela tiver células
+  mescladas, ela não é posta em ordem e o leitor avisa.
+- Aba JOBS: os jobs que você acrescentar ou remover pela janela (veja abaixo).
+O leitor não mexe em JOB, RESPONSÁVEL nem em mais nada, e não cria linha para
+disco novo: a torre ou o SSD precisa já estar na planilha.
+
+
+JOBS DE CADA TORRE
+Na parte "Jobs das torres" da janela (aparece com a planilha ligada) já vem a
+lista da torre ligada. Para ver outra, escreva o código e clique em "Ver", ou
+clique em "jobs" ao lado do código de uma torre.
+Se a planilha ainda não tem a aba JOBS, a lista vem do que está escrito na
+coluna PROJETOS da COLD TORRES, só para ver.
+- Acrescentar: escreva o ano (pode ficar em branco) e o nome do job (cliente +
+  título) e clique em "Acrescentar". Vira uma linha nova na aba JOBS.
+- Remover: clique em "remover" e depois em "confirmar". Nada é apagado: o job
+  sai da lista da torre e a linha fica na aba JOBS, com a data em SAIU EM.
+- Depois de ler uma torre, o leitor mostra as pastas dela que não parecem estar
+  na lista. É só sugestão: ele nunca acrescenta job sozinho.
+A aba JOBS tem um job por linha: TORRE, ANO, JOB, ENTROU EM, SAIU EM, ORIGEM.
+Só o leitor escreve nela.
+
+
+SEM PLANILHA, SEM INTERNET: NADA SE PERDE
+Toda leitura é guardada em arquivo no computador antes de qualquer envio. Se na
+hora não havia planilha ligada, internet ou robô, a janela mostra "N leituras
+guardadas ainda fora da planilha". Quando a planilha estiver ligada, clique em
+"enviar agora": vão todas de uma vez, da mais antiga para a mais nova, e a
+planilha nunca recebe a mesma leitura duas vezes.
+O arquivo de cada leitura guarda mais do que vai para a planilha: a árvore de
+pastas até o terceiro nível, com tamanho, quantidade de arquivos, datas e a
+"impressão" de cada pasta (duas pastas com a mesma impressão têm os mesmos
+arquivos, pelos nomes e tamanhos). É o que permite planejar depois a
+arrumação das torres sem ligar tudo de novo.
+
+
+LIGAR O COMPUTADOR À PLANILHA (uma vez por computador)
+O leitor escreve na planilha em nome de um "robô" do Google (conta de serviço).
+O robô é criado uma vez só: passo a passo em CRIAR_O_ROBO_v1.4.txt.
+Em cada computador:
+1. Coloque a chave do robô (chave-leitor-de-hds.json) na pasta BKP-THE-YOUTH,
+   dentro da sua pasta de usuário.
+2. Abra o leitor, cole o link da planilha no campo do alto da janela e clique
+   em "Ligar". (Para trocar de planilha depois: "trocar", ao lado do nome dela.)
+
+
+ONDE AS LEITURAS FICAM GUARDADAS
+Além da planilha, cada leitura fica guardada em arquivo. No começo, na pasta
+BKP-THE-YOUTH deste computador. Para a equipe toda guardar no mesmo lugar, use
+uma pasta do Google Drive ou do Dropbox:
+1. Combine a pasta (ex.: uma pasta "Leitor de HDs" no Drive da produtora) e veja
+   se ela aparece no Explorador de Arquivos (no Mac, no Finder).
+2. No pé da janela do leitor, clique em "trocar", cole o caminho da pasta e
+   clique em "Usar".
+Vão para essa pasta as leituras e a lista dos discos já lidos (assim um
+computador reconhece o disco que foi lido no outro).
+Ficam só no computador: a chave do robô e a ligação com a planilha. A chave dá
+acesso de edição à planilha, por isso não vai para a pasta compartilhada.
+Sem a planilha ligada, as linhas ficam prontas para colar: botão "Copiar as
+linhas para a aba LEITURAS".
+
+
+VERSÃO NOVA
+As versões são publicadas no GitHub:
+  https://github.com/michelvier/leitor-de-hds
+Quando sai uma versão nova, aparece uma faixa amarela no alto da janela:
+"Saiu a vX.Y do leitor. Baixar a versão nova". O leitor só avisa: ele não se
+troca sozinho. Feche o leitor, baixe a versão nova pelo link e abra. As
+leituras, os códigos dos discos, a chave e a ligação com a planilha continuam.
+O aviso não usa o robô nem conta nenhuma: só pergunta ao GitHub qual é a
+última versão. Sem internet, ele não avisa e o leitor funciona igual.
+
+
+SE DER ERRADO
+- O disco não aparece na lista: veja se ele aparece no Explorador de Arquivos
+  (no Mac, no Finder). Se aparece lá e não na lista, marque "Mostrar também os
+  discos de dentro do computador".
+- Disco formatado para Mac não abre no Windows. Se o Windows oferecer para
+  FORMATAR o disco, NÃO ACEITE: formatar apaga tudo.
+- "A lista de discos mudou depois que você marcou": um disco foi ligado ou
+  desligado nesse meio tempo. Confira e clique de novo.
+- "não chegou à planilha": a leitura está guardada. Use o botão "Copiar as
+  linhas" e cole na aba LEITURAS.
+- "não está compartilhada com o robô": compartilhe a planilha com o e-mail do
+  robô (aparece ao passar o mouse no nome da planilha, na janela) como Editor.
+- "Teste de leitura não feito: o disco foi desligado antes": o disco saiu
+  antes do teste. A leitura das pastas vale; ligue e leia de novo para testar.
+- A janela não abriu: depois de um minuto o leitor mostra um aviso com o
+  endereço. Copie esse endereço no navegador.
+
+
+SEGURANÇA DOS ARQUIVOS
+- Nos discos lidos, o leitor só lista as pastas e abre arquivos para ler.
+  O programa não tem nenhuma função de apagar, mover, renomear, formatar,
+  trocar data ou permissão de arquivo. Um teste automático confere isso a cada
+  versão.
+- Ele só grava na pasta BKP-THE-YOUTH e na pasta de leituras que você escolher.
+  Recusa pasta que fique dentro de um disco externo, e o disco onde a pasta
+  de leituras está nunca aparece na lista para ser lido.
+- O único detalhe que o sistema do computador pode mudar sozinho ao ler é a
+  "data do último acesso" de um arquivo (em discos FAT/exFAT). O conteúdo, o
+  nome e a data de modificação não mudam.
+- Na planilha, o leitor só escreve o que está em "O QUE VAI PARA A PLANILHA".
+  Não apaga nada.
+- Se o Windows oferecer para FORMATAR um disco, isso vem do Windows, não do
+  leitor. Não aceite.
