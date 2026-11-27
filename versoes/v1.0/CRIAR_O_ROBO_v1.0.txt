@@ -1,0 +1,38 @@
+CRIAR O ROBÔ DO LEITOR DE HDs · v1.0
+Uma vez só, uns 10 minutos. Não precisa de cartão de crédito.
+Quem faz: o responsável pelos HDs da The Youth, com a conta Google da produtora.
+
+O robô (conta de serviço) é um usuário do Google que só o Leitor de HDs usa.
+Ele só entra nas planilhas que forem compartilhadas com ele. O robô, a chave e
+o projeto ficam na conta da The Youth: não dependem de ninguém de fora.
+
+1. Abra console.cloud.google.com com a conta Google da The Youth (a mesma que
+   tem acesso à planilha BKP THE YOUTH). Na primeira vez, aceite os termos.
+2. No topo, seletor de projeto > Novo projeto. Nome: Leitor de HDs > Criar.
+   Confira se o projeto novo ficou selecionado no topo.
+3. Menu > APIs e serviços > Biblioteca. Busque "Google Sheets API" > Ativar.
+4. Menu > IAM e administrador > Contas de serviço > Criar conta de serviço.
+   Nome: leitor-de-hds > Criar e continuar > (sem papéis) Continuar > Concluir.
+   Copie o e-mail do robô (termina em .iam.gserviceaccount.com). Ele também
+   aparece na janela do leitor quando a chave estiver no lugar.
+5. Clique no robô > aba Chaves > Adicionar chave > Criar nova chave > JSON >
+   Criar. O navegador baixa um arquivo .json. Renomeie para
+   chave-leitor-de-hds.json.
+   Se aparecer "Service account key creation is disabled" (criação de chave
+   desativada): é uma regra do Google Workspace da produtora. Quem administra
+   o Google da The Youth precisa liberar, em IAM e administrador > Políticas da
+   organização > "Disable service account key creation", só para o projeto
+   Leitor de HDs.
+6. Abra a planilha > Compartilhar > cole o e-mail do robô > Editor >
+   desmarque "Notificar pessoas" > Compartilhar.
+
+CUIDADOS COM A CHAVE
+- A chave funciona como senha: quem tem o arquivo consegue editar as planilhas
+  compartilhadas com o robô. Não mande por chat ou e-mail aberto e não deixe
+  em pasta compartilhada do Drive. Ela fica só na pasta BKP-THE-YOUTH de cada
+  computador que lê discos (leve num pendrive, por exemplo).
+- Se a chave vazar ou um computador sair da equipe: no Google Cloud, robô >
+  Chaves > apague a chave e crie outra. A antiga para de funcionar na hora.
+- Para tirar o acesso do robô a uma planilha, é só tirar o compartilhamento.
+- Trocar de robô (outra conta, outro projeto) é só trocar o arquivo da chave
+  na pasta BKP-THE-YOUTH e compartilhar a planilha com o e-mail do robô novo.
